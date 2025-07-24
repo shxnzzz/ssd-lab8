@@ -1,5 +1,9 @@
 name: "CodeQL Analysis Lab"
 
+permissions:
+  contents: read         # needed to checkout code
+  security-events: write # needed to upload CodeQL results
+
 on: [push, pull_request]
 
 jobs:
